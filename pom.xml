@@ -12,9 +12,10 @@
         <module>user-service</module>
         <module>order-service</module>
         <module>eureka-server</module>
-        <module>eureka-server</module>
-        <module>eureka-server</module>
-        <module>eureka-server</module>
+        <module>feigh-api</module>
+        <!--<module>eureka-server</module>-->
+        <!--<module>eureka-server</module>-->
+        <!--<module>eureka-server</module>-->
     </modules>
 
     <packaging>pom</packaging>
@@ -42,6 +43,14 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
                 <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!--nacos的管理依赖-->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>2.2.6.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

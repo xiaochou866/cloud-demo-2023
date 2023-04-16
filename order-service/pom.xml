@@ -27,10 +27,27 @@
         </dependency>
 
         <!--引入eureka客户端依赖-->
+        <!--<dependency>-->
+        <!--    <groupId>org.springframework.cloud</groupId>-->
+        <!--    <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>-->
+        <!--    <version>2.2.6.RELEASE</version>-->
+        <!--</dependency>-->
+
+        <!-- nacos客户端依赖 -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+        <!--引入feigh客户端依赖-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-            <version>2.2.6.RELEASE</version>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+        <!--引入feign的统一api-->
+        <dependency>
+            <groupId>cn.itcast.demo</groupId>
+            <artifactId>feigh-api</artifactId>
+            <version>1.0</version>
         </dependency>
     </dependencies>
     <build>

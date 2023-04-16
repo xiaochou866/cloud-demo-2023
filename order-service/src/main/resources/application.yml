@@ -9,6 +9,11 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
   application:
     name: orderservice
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+#      discovery:
+#        cluster-name: HZ
 
 mybatis:
   type-aliases-package: cn.itcast.user.pojo
@@ -29,7 +34,8 @@ eureka:
 
 userservice:
   ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+    NFLoadBalancerRuleClassName: com.alibaba.cloud.nacos.ribbon.NacosRule
 
 ribbon:
   eager-load:
