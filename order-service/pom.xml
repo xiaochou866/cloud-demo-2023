@@ -49,6 +49,11 @@
             <artifactId>feigh-api</artifactId>
             <version>1.0</version>
         </dependency>
+        <!--添加sentinel的依赖项-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
