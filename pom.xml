@@ -13,6 +13,7 @@
         <module>order-service</module>
         <module>eureka-server</module>
         <module>feigh-api</module>
+        <module>gateway</module>
         <!--<module>eureka-server</module>-->
         <!--<module>eureka-server</module>-->
         <!--<module>eureka-server</module>-->
